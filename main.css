@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  background: hsl(0, 0%, 98%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.5rem;
+}
+
+footer {
+  margin: 2rem 3rem;
+}
+
+.light-title {
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+
+.bold-title {
+  color: hsl(234, 12%, 34%);
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+/* main-header styles */
+.main-header {
+  margin: 3rem 2rem;
+  text-align: center;
+}
+
+.main-header .bold-title {
+  margin-bottom: 2rem;
+}
+
+/* cards-section sytles */
+.cards-section {
+  width: 90%;
+  margin: 8rem auto;
+}
+
+.card {
+  background: #fff;
+  min-height: 30vh;
+  margin-bottom: 3rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.card__img {
+  text-align: right;
+}
+
+.supervisor {
+  border-top: 0.3rem solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 0.3rem solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 0.3rem solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 0.3rem solid hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width: 1440px) {
+  p {
+    font-size: 1.7rem;
+  }
+
+  .light-title {
+    font-size: 3rem;
+  }
+
+  .bold-title {
+    font-size: 3rem;
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 15vh);
+    /* gap: 3rem; */
+  }
+
+  .card {
+    width: 40rem;
+    height: 35vh;
+  }
+
+  .card h2 {
+    font-size: 2.4rem;
+  }
+
+  .team-builder {
+    grid-column: 2/3;
+  }
+
+  .supervisor {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+
+  .karma {
+    grid-column: 2/5;
+    grid-row: 4/5;
+  }
+
+  .calculator {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+}
